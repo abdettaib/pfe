@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="bundle.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>Gestion des utilisateurs</h1>
+          <h2>Ajout des utilisateurs</h2>
+    
+          <p></p>
+          <p></p>
+          <form id="addData">
+            <div class="form-group">
+              <label for="addDataInput">address utilisateur:</label>
+              <input id="addDataInput"  class="form-control"></input>
+            </div>
+            <p>applications autorisées:</p>
+            <div class="form-group">           
+              <input type="checkbox" id="app1" name="app1" value="finance">
+              <label for="app1"> finance</label><br>
+              <input type="checkbox" id="app2" name="app2" value="marketing">
+              <label for="app2"> marketing</label><br>
+              <input type="checkbox" id="app3" name="app3" value="achat">
+              <label for="app3"> achat</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Ajouter</button>
+          </form>
+          <h2>Modification des utilisateurs</h2>
+          <form id="chData">
+            <div class="form-group">
+              <label for="chDataInput">address utilisateur:</label>
+              <input id="chDataInput"  class="form-control"></input>
+            </div>
+            <p>applications autorisées:</p>
+            <div class="form-group">           
+              <input type="checkbox" id="app1" name="app1" value="finance">
+              <label for="app1"> finance</label><br>
+              <input type="checkbox" id="app2" name="app2" value="marketing">
+              <label for="app2"> marketing</label><br>
+              <input type="checkbox" id="app3" name="app3" value="achat">
+              <label for="app3"> achat</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Modifier</button>
+          </form>
+          <h2>Suppression des utilisateurs</h2>
+          <form id="deleteData">
+            <div class="form-group">
+              <label for="addDataInput">address utilisateur:</label>
+              <input id="addDataInput"  class="form-control"></input>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Supprimer</button>
+          </form>
+          <div>resultat : <span id="data"></span></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
